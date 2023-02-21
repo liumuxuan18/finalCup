@@ -1,0 +1,538 @@
+@import "common/mixins"
+@import "common/variables"
+// 字型
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap')
+
+html,body
+    a
+        text-decoration: none
+    background-color: $mainColor-green
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+
+#root
+    overflow-x: hidden   
+
+
+.indexBox
+    width: 100%
+    // height: 100%
+    background-color: $mainColor-white
+    border-radius: 0 0 205px 205px
+    // margin-bottom: 397px
+
+
+
+//搜尋map區塊
+.mapBox_wrap
+    padding-bottom: 110px
+    .imgBg
+        width: 100%
+        height: 361px
+        background-image: url(../../public/img/index/searchBox-bg.jpg)
+        overflow: hidden
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+    //搜尋bar
+    &_content
+        .searchMap_box
+            display: flex
+            justify-content: space-between
+            align-items: center //baseline
+            max-width: 1086px
+            flex-direction: row
+            margin: 0 auto
+
+            background: #FFFFFF
+            box-shadow: 3px 13px 30px rgba(0, 0, 0, 0.12)
+            border-radius: 67px
+            overflow: hidden
+            padding: 0px 75px //23 75
+            position: relative
+            transform: translateY(-60px)
+
+
+            .searchMap_item
+                margin: 7px 0px
+                width: 18%
+                // &:nth-of-type(3)
+                //     padding-left: 10px
+                //     position: relative
+                //     top: 9px
+                label
+                    +fz-TC(18px,$subColor-blue,400)
+                    margin-bottom: 18px
+                    padding-left: 10px
+                    opacity: 0.8
+                select
+                    border: 0px
+                    font-size: 20px
+                    padding-left: 10px
+                input
+                    border: 0px
+                    font-size: 20px
+                    padding-left: 10px
+                    display: block
+
+            .divider
+                width:2px
+                height: 120px 
+                background-color: #eee
+                &:nth-of-type(1)
+                    position: relative
+                    left: 38px
+                &:nth-of-type(2)
+                    position: relative
+                    left: 46px
+                    
+
+
+            .ico-search
+                width: 86px
+                height: 86px
+                border-radius: 50%
+                background-color: $mainColor-green
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 40px
+                position: relative
+                left: 54px
+                transition: 0.4s
+                &:hover
+                    background-color: $hoverColor
+                    transition: 0.4s
+                    text-shadow: 1px 1px 4px rgba(0,0,0,0.4)
+                .text
+                    display: none
+                i
+                    color: #fff
+                    padding: 11px
+
+
+        .mapBox_intro
+            display: flex
+            justify-content: center
+            margin-top: 27px
+            &_text
+                +fz-TC(18px,$mainColor-blue,400)
+                max-width: 890px
+                text-align: center
+                line-height: 2.2em       
+
+//About Us
+.aboutUs
+    &Box
+        margin-top: 70px
+        .imgDiv
+            min-height: 785px
+        .imgBox
+            max-width: 746px
+            display: flex
+            flex-wrap: wrap
+            position: relative
+        .img-aboutUs
+            // border-radius: 42px
+            overflow: hidden
+            margin: 10px 15px
+            // height: 100%
+            img
+                width: 100%
+                border-radius: 42px
+
+        .imgAB
+            &1
+                width: 25%
+            &2
+                width: 25%
+                position: absolute
+                left: 32%
+                top: 63%
+            &3
+                width: 30%
+                position: absolute
+                left: 64%
+                top: 1%
+            &4
+                width: 46%
+                position: absolute
+                left: 6%
+                top: 168%
+            &5  
+                width: 25%
+                position: absolute
+                right: 3%
+                top: 168%
+    &_wrap
+        padding: 60px 0px
+    &_textBox
+        text-align: center
+
+    &_EN
+        +subTitle
+        // margin-bottom: 10px
+    &_title
+        +mainTitle
+    &_content
+        +fz-TC
+        font-weight: 400
+        line-height: 67px
+        letter-spacing: 0.03em
+        max-width: 543px
+
+.btn-aboutUs
+    +indexBtn        
+    margin-top: 76px
+    transition: 0.5s
+    &:hover
+        background: $hoverColor
+
+        i
+            left: 20px
+            transition: all 0.3s ease-in-out
+
+
+//service  
+.service
+    &Bg
+        background-color: $mainColor-green
+        padding: 115px 0px 136px 0px
+      
+    &_wrap
+        padding: 179px 0px 84px 0px
+        
+  
+    &_textBox
+        text-align: left
+
+    &_EN
+        +subTitle($mainColor-white)
+    &_title
+        +mainTitle($mainColor-white)  
+    &_content
+        +fz-TC(18px,$mainColor-white,400)
+        line-height: 38px
+        margin: 85px 0px
+.btn-service
+    +indexBtn($mainColor-white,$mainColor-blue)
+    .btn_text
+        border-right: 1px solid #CDCDCD
+        padding-right: 126px
+        @media (max-width:768px)
+            padding-right:25px
+    i
+        color: $mainColor-green
+    &:hover
+        i
+            left: 20px
+            transition: all 0.3s ease-in-out
+.testImg
+    width: 100%
+    height: 607px   
+    background-color: #E9F8FF
+    border-radius: 110px
+    // position: relative
+    // top: -24%
+    text-align: center
+
+//News
+.news
+    &_wrap
+        margin-top: 55px
+        a
+            text-decoration: none
+          
+                
+        .col-lg-4
+            display: flex
+            justify-content: center
+        .itemA
+            &1
+                margin-top: calc(2*63px)
+            &2
+                margin-top: 63px
+            &3
+            &4
+                margin-top: 75px
+                // margin-top: calc(2*63px)
+            &5
+                margin-top: 15px
+                // margin-top: 63px
+            &6
+                margin-top: -51px    
+                
+                
+                
+
+    &_textBox
+        text-align: left
+     
+    &_EN
+        +subTitle($subColor-lightBlue)
+    &_title
+        +mainTitle($mainColor-green)  
+    &_item
+        background-color: #fff
+        box-shadow: 0px 6px 22px rgba(22, 47, 58, 0.1)
+        border-radius: 7px 68px
+        overflow: hidden
+        max-width: 456px
+        transition: 0.6s
+        &:hover
+            border-radius: 68px
+            transition: 0.6s
+            max-width: 420px
+            .btn-more
+                color: $mainColor-green
+                transition: 0.8s
+               
+        &_bg
+            background-repeat: no-repeat
+            background-size: cover
+            min-height: 270px
+            &.itemBg1
+                background-image: url(../../public/img/index/img-news1.jpg)
+            &.itemBg2
+                background-image: url(../../public/img/index/img-news2.jpg)
+            &.itemBg3
+                background-image: url(../../public/img/index/img-news3.jpg)
+            &.itemBg4
+                background-image: url(../../public/img/index/img-news4.jpg)
+            &.itemBg5
+                background-image: url(../../public/img/index/img-news5.jpg)
+            &.itemBg6
+                background-image: url(../../public/img/index/img-news6.jpg)
+               
+        &_content
+            padding: 32px 45px
+        &_intro
+            +fz-TC
+            font-weight: 500
+            margin-bottom: 20px
+            line-height: 38px
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 2
+            -webkit-box-orient: vertical
+        &_divid
+            display: inline-block
+            background-color: $mainColor-green
+            width: 73px
+            height: 2px
+
+        &_add
+            margin-top: 21px
+            +fz-EN(18px,#495C64,400)
+            display: flex
+            justify-content: flex-start
+
+            .date
+            span
+                padding: 0 5px
+            .type       
+    //news title        
+    &_item_textBox
+        background-color: rgba(249, 253, 255, 0.7)
+        width: 293px
+        min-height: 144px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        &_wrap
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            top: 66px
+        
+        &_type
+            +fz-EN(18px,#495C64,500)
+        &_title
+            +fz-TC(27px)
+            margin-top: 10px
+
+.moreBox
+    display: flex
+    justify-content: flex-end
+    margin-top: 18px
+    .btn-more
+        +fz-TC
+        font-weight: 500
+        transition: 0.8s
+        img
+            margin-left: 10px
+            position: relative
+            bottom: 2px 
+
+//Contact Us
+.contactUs
+    &_wrap
+        margin-top: 150px
+        padding-bottom: 225px
+    //標題
+    &_textBox
+        text-align: center
+
+    &_EN
+        +subTitle
+        // margin-bottom: 10px
+    &_title
+        +mainTitle
+    //內容
+    &_Box
+        margin-top: 140px
+        padding: 0 109px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_imgBox
+        width: 100%
+        max-width: 704px //741px
+        height: 410px //440px
+        background-repeat: no-repeat
+        background: #FFFFFF
+        background-image: url(../../public/img/index/contactUs-img.svg)
+        background-position: center
+        box-shadow: 0px 11px 40px rgba(0, 0, 0, 0.04)
+        border-radius: 7px 68px
+
+        display: flex
+        justify-content: center
+        align-items: center
+        .imgBox_textBox
+            &_sub
+                +fz-TC(26px,#50A960)
+                text-align: center 
+            &_title
+                +fz-TC(48px)       
+    &_content
+        max-width: 544px
+        &_text
+            +fz-TC(18px,$mainColor-blue,400)
+            line-height: 40px
+            letter-spacing: 0.04em
+
+.btn-contactUs
+    +indexBtn        
+    margin-top: 76px
+    transition: all 0.3s ease-in-out
+    &:hover
+        background: $hoverColor
+        i
+            left: 20px
+            transition: all 0.3s ease-in-out
+
+
+
+
+// RWD
+
+@media (min-width:1400px)and(max-width:1680px)   
+    .contactUs_Box
+        padding: 0 50px
+    .contactUs_imgBox
+        margin-right: 35px
+
+@media (max-width:1400px)
+ 
+    //地圖
+    .mapBox_wrap
+        .divider
+            display: none
+    //關於我們
+    .contactUs_Box
+        flex-direction: column
+        margin-top: 45px
+    .contactUs_imgBox
+        min-width: 100%
+    .contactUs_content
+        max-width: 90%
+        margin-top: 40px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+    .btn-contactUs
+        margin-top: 55px
+    
+
+@media (max-width:992px)
+    .news_wrap
+        .itemA
+            &2,&3,&4
+                margin-top: 63px
+            &5,&6
+                display: none
+    .btn-aboutUs
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .btn_text
+            padding-right: 127px
+    .btn-service
+        margin-bottom: 50px
+
+@media (width:768px)
+    .aboutUsBox
+        .imgDiv
+            min-height: 710px
+        .imgAB4
+            width: 38%
+
+@media (max-width:768px)
+    .indexBox
+        border-radius: 0 0 136px 136px
+
+    .rwd_linkBtn
+        width: 100%
+    .mapBox_wrap_content
+        .searchMap_box
+            flex-direction: column
+            padding: 20px 50px
+            border-radius: 50px
+            margin: 0px 20px
+            .ico-search
+                width: 100%
+                height: 100%
+                border-radius: inherit
+                left: 0
+                margin-top: 20px
+                // margin: 20px 0px
+                font-size: 20px
+                letter-spacing: 1.2px
+                margin-top: 20px
+                margin-bottom: 12px
+
+                .text
+                    display: inline-block
+                a
+                    width: 93%
+                    color: #fff
+                    text-align: center
+            .searchMap_item
+                width: 100%
+
+    .aboutUs_wrap
+        .aboutUsBox 
+            .imgDiv
+                z-index: 1
+                opacity: 0.2
+                min-height: 100%
+            .aboutUs_content
+                z-index: 2
+                position: relative
+    
+    .contactUs_wrap
+        padding-bottom: 100px
+        .contactUs_Box
+            padding: 0
+    
+
+

@@ -1,0 +1,480 @@
+@import "common/mixins"
+@import "common/variables"
+
+// 字型
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap')
+
+// font-family: 'Noto Sans', sans-serif
+// font-family: 'Noto Sans TC', sans-serif
+
+//toTop 置頂button
+#toTop   
+    position: fixed
+    font-size: 60px
+    right: 3%
+    bottom: 8%
+    z-index: 88
+    a
+        color: $mainColor-green
+        width: 100%
+        display: inline-block
+        text-decoration: none
+        transition: 0.4s 
+        &:hover
+            color: $hoverColor
+            transition: 0.4s 
+    i
+        background: $mainColor-white
+        padding: 3px
+        border-radius: 50%
+        box-shadow: 4px 5px 4px rgba(167,184,169,0.4)
+
+
+//頁首header
+.headerWrap
+    padding-top: 94px
+    padding-bottom: 80px
+    position: relative
+    .container
+        overflow: hidden
+    .scrollWrap
+        display: inline-block
+        position: absolute
+        left: 3%
+        top: 600px
+    .scrollBox
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .scroll-text
+            +fz-TC(24px,#50A960)
+            writing-mode: vertical-rl
+        .scrollBar
+            width: 4px
+            height: 110px
+            background-color: #D3FFDB
+            transform: translateX(-50%)
+            margin-top: 10px
+            overflow: hidden
+            .percent
+                display: block
+                width: 100%
+                height: 0% 
+                background-color: #50A960 
+
+    //導覽列
+    &_top
+        .header_logo
+            width: 260px
+            position: relative
+            top: 5px
+            
+        .navBar_box
+            
+            background-color: #fff
+            box-shadow: 3px 13px 45px rgba(216, 235, 220, 0.57)
+            border-radius: 46px
+
+        .navBar
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            padding: 25px 54px
+            list-style: none
+            &_item
+                padding: 0 5px
+                position: relative                                     
+                a
+                    text-decoration: none
+                    +fz-TC(18px,#2D5363)
+                    transition: 0.3s
+                    &:hover
+                        color: $mainColor-green   
+            // 桌面版下拉選單
+            .drop-menu
+                background: #FFFFFF
+                box-shadow: 0px 8px 5px rgba(235, 235, 235, 0.23)
+                border-radius: 0px 0px 9px 9px
+                width: 152px
+                line-height: 45px
+                padding: 5px 12px
+                list-style: none
+                position: absolute
+                left: -17px
+                top: 43px
+                //初始狀態被誤判成了 mouseenter 事件 先隱藏
+                display: none
+
+                &_item
+                    a
+                        font-weight: 500
+                        width: 100%
+                        display: inline-block
+                        border-radius: 4px
+                        padding: 0px 10px
+                        transition: background-color 0.3s
+
+                        &:hover
+                            // background-color: rgba(100, 198, 118, 0.9)
+                            // color: $mainColor-white
+                            background-color: rgba(230,246,228,0.9)
+                            color: #1eb43a
+                            
+
+    &_banner
+        min-height: 510px
+        position: relative
+        .decDot1
+            position: absolute
+            top: -35px
+        .visualBox
+            max-width: 497px
+            margin: 119px 0 0 100px
+            position: relative
+            z-index: 2
+           
+
+            &_slogan
+                +fz-TC(62px)
+              
+            &_text
+                +fz-EN(35px,$subColor-blue)
+                margin-top: 15px
+        .bannerImg
+            position: absolute
+            right: 20%
+            top: -9px
+            .decImg
+                position: relative
+                right: 15px
+                animation: decImg-rotate 1s linear reverse both
+	            
+    
+        .decBox
+            position: absolute
+            top: 0px
+            .decDot
+                position: absolute
+                    
+                &2
+                    left: -133px
+                    top: 20px
+                &3
+                    left: -170px
+                    top: 200px
+                  
+                &4
+                    left: -303px
+                    top: 321px
+                    
+                &5
+                    right: -531px
+                &6
+                    left: 415px
+                    top: 184px
+                &7
+                    top: 430px
+                    left: 352px
+                &8
+                    left: 577px
+                    top: 130px
+                &9
+                    left: 520px
+                    top: 334px
+
+//bannerLogo動畫
+@keyframes decImg-rotate
+    0%
+        transform: scale(1) rotateZ(0)
+    50%
+        transform: scale(0.5) rotateZ(180deg)
+    100%
+        transform: scale(0) rotateZ(360deg)
+
+.animate__zoomIn
+    animation-delay: 0.7s
+
+//頁尾footer
+footer
+    margin-top: 125px
+    min-height: 210px
+    .footerRow
+        align-items: center
+
+    .socialWrap
+        display: flex
+        justify-content: flex-start
+        align-items: center
+    .socialList
+        display: flex
+        justify-content: space-evenly
+        list-style: none
+        margin-bottom: inherit            
+        &_item
+            position: relative
+            margin-right: 17px
+            a
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 45px
+                height: 45px
+                color: #fff
+                border: 2px solid #fff
+                padding: 2px 2px
+                border-radius: 50%
+                font-size: 2rem
+                transition: background 3s
+                &:hover
+                    text-shadow: 2px 1px 4px rgba(0,0,0,0.5)
+                    background: linear-gradient(141.18deg, #21c10f 13.33%, #1c85acdc 100%)
+                    
+            i
+                position: relative
+        .ico-fb
+            font-size: 28px
+    .copyrightBox
+        +fz-TC(16px,$mainColor-white,500) 
+        margin-top: 16px
+        padding-left: 18px
+        letter-spacing: 1px
+
+    .footerNav
+        margin-top: 15px
+        padding-left: 0
+        list-style: none
+        display: flex
+        justify-content: flex-end
+        +fz-TC(18px,$mainColor-white,500)
+        letter-spacing: 1px
+        &_item
+            a
+                padding-left: 58px
+                color: $mainColor-white
+    .termsBox
+        display: flex
+        justify-content: flex-end
+        margin-top: 40px
+        .ft_copyrightBox
+            display: none
+        &_item
+            padding-left: 45px
+            a
+               +fz-TC(16px,$mainColor-white,500)
+               display: inline-block
+                
+
+//漢堡選單按鈕
+.navMenu_box
+    display: flex
+    justify-content: space-between
+
+.ico-navMenu_wrap
+    width: 55px
+    height: 55px  
+    border-radius: 35%
+    background-color: #fff
+    // box-shadow: 3px 13px 45px rgba(216,235,220,0.57)
+    box-shadow: 3px 13px 45px rgba(197,225,203,0.57)
+    z-index: 99
+    position: fixed
+    right: 5%
+    @media (min-width:768px)
+        display: none   
+#ico-navMenu
+    position: relative
+    top: 16px
+    left: 13px
+    width: 55px
+ 
+    transform: rotate(0deg)
+    transition: .5s ease-in-out
+    cursor: pointer
+    
+   
+    @media (min-width:768px)
+        display: none
+    
+    span
+        display: inline-block
+        position: absolute
+        height: 5px
+        width: 56%
+        background: $mainColor-green
+        border-radius: 13px
+        opacity: 1
+        left: 0
+        transform: rotate(0deg)
+        transition: .25s ease-in-out
+
+        &:nth-child(1)
+            top: 0px
+        &:nth-child(2)
+            top: 10px
+        &:nth-child(3)
+            top: 20px
+    &.open
+        span
+            &:nth-child(1)
+                top: 11px
+                transform: rotate(135deg)
+            &:nth-child(2) 
+                opacity: 0
+                left: -60px
+            &:nth-child(3)
+                top: 11px
+                transform: rotate(-135deg)  
+
+    
+//RWD選單樣式
+.rwd_navMenu
+    //內容
+    padding: 0
+    list-style: none
+    margin-top: 20px
+    margin-left: 35px
+    margin-right: 35px
+    line-height: 58px
+    //外框盒子
+    &_box
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: $mainColor-green
+        margin: 0
+        z-index: 98
+
+        //側選單展開動畫
+        transform: translateX(-100%)
+        transition: transform 0.8s ease-out
+        // display: none
+
+        &.openMenu
+            // display: block
+            //側選單展開動畫
+            transform: translateX(0)
+            transition: transform 0.6s
+
+    //rwd漢堡選單logo
+    &_logo
+        width: 202px
+        margin: 18px
+        margin-top: 29px    
+       
+    &_item
+        
+        +fz-TC
+        font-weight: 500
+        letter-spacing: 1px
+        
+        a
+            color: $mainColor-white
+            display: inline-block
+            width: 100%
+            padding: 0 15px
+            transition: 0.3s
+
+            &:hover
+                // background-color: #ffffff59
+                background-color: #31362f2b
+                border-radius: 6px
+
+    //子選單
+    &_sub
+        padding-left: 20px
+        list-style: none
+        line-height: 45px
+        margin-top: 5px
+        margin-bottom: 20px
+        //網頁載入先設定隱藏
+        display: none
+         
+
+//RWD響應式調整
+@media (min-width:1400px)and(max-width:1680px)
+    .container
+        padding: 0 37px
+
+@media (max-width:1400px)
+    //navBar
+    .navBarRow
+        width: 100%
+        margin-top: 52px
+    //footer    
+    footer
+        .footerRow
+            flex-direction: column
+        .footerRwd_wrap
+            &-1,&-2
+                width: 100%
+            &-2
+                display: flex
+                flex-direction: column
+                align-items: center
+        .footerNav
+            margin-top: 50px
+            &_item a
+                padding-left: 20px
+            
+        .socialWrap
+            justify-content: center
+        .copyrightBox
+            display: none
+        .termsBox
+            padding-bottom: 50px
+            .ft_copyrightBox
+                display: inline-block
+                +fz-TC(16px,$mainColor-white,500)      
+
+@media (max-width:768px)
+    .container
+        max-width: 100%
+        padding: 0 25px
+    
+    .headerWrap
+        padding-top: 28px
+        padding-bottom: 58px
+        &_top
+            .navBarRow
+                display: none
+            .header_logo
+                img
+                    width: 186px
+        &_banner
+            min-height: 292px
+            top: 20px
+            .decDot1
+                left: -15px
+            .decImg
+                width: 74%
+                left: 74px
+            .visualBox
+                margin: 67px 20px 0 20px 
+                &_slogan
+                    font-size: 34px
+                &_text
+                    font-size: 22px
+
+    #toTop 
+        display: none
+
+    footer
+        margin-top: 50px
+        .footerNav
+            display: none
+        .socialWrap
+            flex-direction: column
+        .termsBox
+            flex-direction: column-reverse
+            &_item
+                padding-left: 0px
+                margin: 10px 0px   
+
+@media (max-width:576px)
+    .headerWrap 
+        .scrollWrap
+            display: none         
