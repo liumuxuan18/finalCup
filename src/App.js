@@ -14,7 +14,7 @@ function App(){
       
           <div>
            <Routes>
-            <Route path="/" element={<Home/>} />
+            <Route path="finalCup/" element={<Home/>} />
            </Routes>
           </div>
        
