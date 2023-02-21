@@ -8,6 +8,7 @@ import ToTop from "../component/ToTop";
 import Scroll from "../component/Scroll";
 import NavBar from "../component/NavBar";
 import Footer from "../component/Footer";
+import test from "../img/bannerImg.svg"
 
 
 function Home(){
@@ -36,7 +37,7 @@ function Home(){
                             <div className="visualBox_text">Search Bar Information for friendly life</div>
                         </div>
                         <div className="bannerImg">
-                            <img className="decImg" src="./img/index/bannerImg.svg"/>
+                            <img className="decImg" src={test}/>
                             <div className="decBox animate__animated animate__zoomIn">
                             
                             <span className="decDot decDot2"><img src="./img/index/decSpan/decDot2.svg"/></span>
