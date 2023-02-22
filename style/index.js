@@ -66,4 +66,18 @@ $(document).ready(function () {
 		clearInterval(timer);
 	});
 
+	//註冊
+	$("#signupbtn").on("click", function () {
+		$("#signinbtn").css("background-color", "");
+		$("#oop").hide();
+		$("#ooa").show();
+		$("#signupbtn").css("background-color", "var(--mainColor-green4)");
+	  })
+	  $("#signinbtn").on("click", function () {
+		$("#signupbtn").css("background-color", "");
+		$("#oop").show();
+		$("#signinbtn").css("background-color", "var(--mainColor-green4)");
+		$("#ooa").hide();
+	  })
+
 });

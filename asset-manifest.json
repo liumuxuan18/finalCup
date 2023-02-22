@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/finalCup/static/css/main.6f86111c.css",
-    "main.js": "/finalCup/static/js/main.16d1ba61.js",
+    "main.css": "/finalCup/static/css/main.f281f2d2.css",
+    "main.js": "/finalCup/static/js/main.a5275aaa.js",
     "static/js/787.8f29bb8b.chunk.js": "/finalCup/static/js/787.8f29bb8b.chunk.js",
     "static/media/searchBox-bg.jpg": "/finalCup/static/media/searchBox-bg.3a15128e0f82ce425f0a.jpg",
     "static/media/img-news2.jpg": "/finalCup/static/media/img-news2.13b06c9e0c24244ec33f.jpg",
@@ -28,12 +28,12 @@
     "static/media/decDot3.svg": "/finalCup/static/media/decDot3.374ce71fb69ccd98fb231d2fc3d0edbb.svg",
     "static/media/decDot4.svg": "/finalCup/static/media/decDot4.39a850629b3910b5f34956ddf792ec61.svg",
     "static/media/decDot7.svg": "/finalCup/static/media/decDot7.066308e050dfae004ed4fe6bee3b0ffa.svg",
-    "main.6f86111c.css.map": "/finalCup/static/css/main.6f86111c.css.map",
-    "main.16d1ba61.js.map": "/finalCup/static/js/main.16d1ba61.js.map",
+    "main.f281f2d2.css.map": "/finalCup/static/css/main.f281f2d2.css.map",
+    "main.a5275aaa.js.map": "/finalCup/static/js/main.a5275aaa.js.map",
     "787.8f29bb8b.chunk.js.map": "/finalCup/static/js/787.8f29bb8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f86111c.css",
-    "static/js/main.16d1ba61.js"
+    "static/css/main.f281f2d2.css",
+    "static/js/main.a5275aaa.js"
   ]
 }
