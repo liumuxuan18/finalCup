@@ -2,13 +2,28 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"
 // import "../bootstrap-5.3-2/bootstrap";
-import "../style/index.css";
-import "../style/layout.css";
+// import "../style/index/";
+// import "../style/layout.css";
 import ToTop from "../component/ToTop";
 import Scroll from "../component/Scroll";
 import NavBar from "../component/NavBar";
 import Footer from "../component/Footer";
-import test from "../img/bannerImg.svg"
+import decDot1 from "../img/index/decSpan/decDot1.svg"
+import decDot2 from "../img/index/decSpan/decDot2.svg"
+import decDot3 from "../img/index/decSpan/decDot3.svg"
+import decDot4 from "../img/index/decSpan/decDot4.svg"
+import decDot5 from "../img/index/decSpan/decDot5.svg"
+import decDot6 from "../img/index/decSpan/decDot6.svg"
+import decDot7 from "../img/index/decSpan/decDot7.svg"
+import decDot8 from "../img/index/decSpan/decDot8.svg"
+import decDot9 from "../img/index/decSpan/decDot9.svg"
+import bannerImg from "../img/index/bannerImg.svg"
+import aboutUs1 from "../img/index/aboutUs-img1.jpg"
+import aboutUs2 from "../img/index/aboutUs-img2.jpg"
+import aboutUs3 from "../img/index/aboutUs-img3.jpg"
+import aboutUs4 from "../img/index/aboutUs-img4.jpg"
+import aboutUs5 from "../img/index/aboutUs-img5.jpg"
+import btnMore from "../img/index/btn-more.svg"
 
 
 function Home(){
@@ -31,23 +46,23 @@ function Home(){
                         {/* <!-- 導覽列菜單 --> */}         
                             <NavBar />                   
                     <div className="headerWrap_banner">
-                    <span className="decDot decDot1 animate__animated animate__zoomIn"><img src="./img/index/decSpan/decDot1.svg"/></span>
+                    <span className="decDot decDot1 animate__animated animate__zoomIn"><img src={decDot1}/></span>
                         <div className="visualBox" data-aos="fade-up" data-aos-duration="1000">
                             <div className="visualBox_slogan">環唄！循環杯<br />建立友善生活圈 </div>
                             <div className="visualBox_text">Search Bar Information for friendly life</div>
                         </div>
                         <div className="bannerImg">
-                            <img className="decImg" src={test}/>
+                            <img className="decImg" src={bannerImg}/>
                             <div className="decBox animate__animated animate__zoomIn">
                             
-                            <span className="decDot decDot2"><img src="./img/index/decSpan/decDot2.svg"/></span>
-                            <span className="decDot decDot3"><img src="./img/index/decSpan/decDot3.svg"/></span>
-                            <span className="decDot decDot4"><img src="./img/index/decSpan/decDot4.svg"/></span>
-                            <span className="decDot decDot5"><img src="./img/index/decSpan/decDot5.svg"/></span>
-                            <span className="decDot decDot6"><img src="./img/index/decSpan/decDot6.svg"/></span>
-                            <span className="decDot decDot7"><img src="./img/index/decSpan/decDot7.svg"/></span>
-                            <span className="decDot decDot8"><img src="./img/index/decSpan/decDot8.svg"/></span>
-                            <span className="decDot decDot9"><img src="./img/index/decSpan/decDot9.svg"/></span>
+                            <span className="decDot decDot2"><img src={decDot2}/></span>
+                            <span className="decDot decDot3"><img src={decDot3}/></span>
+                            <span className="decDot decDot4"><img src={decDot4}/></span>
+                            <span className="decDot decDot5"><img src={decDot5}/></span>
+                            <span className="decDot decDot6"><img src={decDot6}/></span>
+                            <span className="decDot decDot7"><img src={decDot7}/></span>
+                            <span className="decDot decDot8"><img src={decDot8}/></span>
+                            <span className="decDot decDot9"><img src={decDot9}/></span>
                         </div>
                         </div>
                        
@@ -128,15 +143,15 @@ function Home(){
                         <div className="row">
                             <div className="col-lg-6 imgDiv">
                                 <div className="imgBox">
-                                    <div className="img-aboutUs imgAB1" data-aos="zoom-in-right" data-aos-duration="1500"><img src="./img/index/aboutUs-img1.jpg" alt="" />
+                                    <div className="img-aboutUs imgAB1" data-aos="zoom-in-right" data-aos-duration="1500"><img src={aboutUs1} alt="" />
                                     </div>
-                                    <div className="img-aboutUs imgAB2" data-aos="zoom-in"  data-aos-delay="200" data-aos-duration="2000"><img src="./img/index/aboutUs-img2.jpg" alt="" />
+                                    <div className="img-aboutUs imgAB2" data-aos="zoom-in"  data-aos-delay="200" data-aos-duration="2000"><img src={aboutUs2} alt="" />
                                     </div>
-                                    <div className="img-aboutUs imgAB3" data-aos="zoom-in-left" data-aos-duration="1500"><img src="./img/index/aboutUs-img3.jpg" alt="" />
+                                    <div className="img-aboutUs imgAB3" data-aos="zoom-in-left" data-aos-duration="1500"><img src={aboutUs3} alt="" />
                                     </div>
-                                    <div className="img-aboutUs imgAB4" data-aos="zoom-in-right" data-aos-duration="2000"><img src="./img/index/aboutUs-img4.jpg" alt="" />
+                                    <div className="img-aboutUs imgAB4" data-aos="zoom-in-right" data-aos-duration="2000"><img src={aboutUs4} alt="" />
                                     </div>
-                                    <div className="img-aboutUs imgAB5" data-aos="zoom-in-left" data-aos-duration="1500"><img src="./img/index/aboutUs-img5.jpg" alt="" />
+                                    <div className="img-aboutUs imgAB5" data-aos="zoom-in-left" data-aos-duration="1500"><img src={aboutUs5} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +249,7 @@ function Home(){
                                         <div className="moreBox">
 
                                             <div className="btn-more">
-                                                MORE <img src="./img/index/btn-more.svg" />
+                                                MORE <img src={btnMore} />
                                             </div>
 
                                         </div>
@@ -271,7 +286,7 @@ function Home(){
                                         <div className="moreBox">
 
                                             <div className="btn-more">
-                                                MORE <img src="./img/index/btn-more.svg" />
+                                                MORE <img src={btnMore} />
                                             </div>
 
                                         </div>
@@ -308,7 +323,7 @@ function Home(){
                                         <div className="moreBox">
 
                                             <div className="btn-more">
-                                                MORE <img src="./img/index/btn-more.svg" />
+                                                MORE <img src={btnMore} />
                                             </div>
 
                                         </div>
@@ -346,7 +361,7 @@ function Home(){
                                         <div className="moreBox">
 
                                             <div className="btn-more">
-                                                MORE <img src="./img/index/btn-more.svg" />
+                                                MORE <img src={btnMore} />
                                             </div>
 
                                         </div>
@@ -383,7 +398,7 @@ function Home(){
                                         <div className="moreBox">
 
                                             <div className="btn-more">
-                                                MORE <img src="./img/index/btn-more.svg" />
+                                                MORE <img src={btnMore} />
                                             </div>
 
                                         </div>
@@ -420,7 +435,7 @@ function Home(){
                                         <div className="moreBox">
 
                                             <div className="btn-more">
-                                                MORE <img src="./img/index/btn-more.svg" />
+                                                MORE <img src={btnMore} />
                                             </div>
 
                                         </div>
