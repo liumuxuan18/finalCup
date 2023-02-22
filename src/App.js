@@ -3,7 +3,8 @@ import {
     Routes,
     Route,
   } from "react-router-dom";
-import "./style/all.scss"
+import "./style/all.scss";
+import "bootstrap/js/index.esm";
 import Home from "./pages/home";
 
 // import './style/'

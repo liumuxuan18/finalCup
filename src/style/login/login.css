@@ -1,0 +1,33 @@
+
+:root{
+    --mainColor-white:#FEFCFC;
+    --subColor-blue2:#70A0B4;
+    --subColor-blue3:#9BC9DD;
+    --mainColor-green4:#64C676;
+    --fontSize-H5:18px;
+}
+
+
+#edison p{
+  font-size: var(--fontSize-H5);
+}
+.modal{
+  --bs-modal-border-radius:0;
+  --bs-modal-border-color:0;
+  --bs-modal-border-width:0;
+}
+#edison .modal-content{
+  background-color: var(--mainColor-white);
+}
+
+#edison .btnSubmit{
+  background-color: var(--subColor-blue3);
+}
+#edison .btnSubmit:hover{
+  background-color: var(--subColor-blue2);
+}
+#edison #ooa{
+  display: none;
+}
+
+
