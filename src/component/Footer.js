@@ -1,3 +1,4 @@
+import footerLogo from "../img/index/footerLogo.svg"
 function Footer(){
     return(
         <footer>
@@ -5,7 +6,7 @@ function Footer(){
             <div className="row footerRow">
                 <div className="col-lg-4 col-md-12 footerRwd_wrap-1">
                     <div className="socialWrap">
-                        <img src="./img/index/footerLogo.svg" />
+                        <img src={footerLogo} />
                         <ul className="socialList">
 
                             <li className="socialList_item ico-ig">

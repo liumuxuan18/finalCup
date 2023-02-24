@@ -1,13 +1,14 @@
-
+import logoImg from "../img/index/headerLogo.svg";
 
 function NavBar(){
     
 return(
+  <div className="container navBarBg">
     <div className="headerWrap_top">
         <div className="row">
         <div className="col-lg-3 navMenu_box">
             <div className="header_logo">
-                <img src="./img/index/headerLogo.svg" alt="" />
+                <img src={logoImg} />
             </div>
             {/* <!-- RWD漢堡選單 --> */}
 
@@ -181,6 +182,7 @@ return(
       </div>
     </div>
   </div>
+    </div>
     </div>
 
 

@@ -44,7 +44,7 @@ function Home(){
                 <Scroll />
                 <div className="container">
                         {/* <!-- 導覽列菜單 --> */}         
-                            <NavBar />                   
+                            {/* <NavBar />                    */}
                     <div className="headerWrap_banner">
                     <span className="decDot decDot1 animate__animated animate__zoomIn"><img src={decDot1}/></span>
                         <div className="visualBox" data-aos="fade-up" data-aos-duration="1000">
@@ -490,7 +490,7 @@ function Home(){
             </div>
             </div>
         </div>
-            <Footer />
+            {/* <Footer /> */}
        </div>
     );
 

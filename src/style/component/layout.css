@@ -24,6 +24,10 @@
   box-shadow: 4px 5px 4px rgba(167, 184, 169, 0.4);
 }
 
+.navBarBg {
+  background-color: #FEFCFC;
+}
+
 .headerWrap {
   padding-top: 94px;
   padding-bottom: 80px;
@@ -64,6 +68,10 @@
   width: 100%;
   height: 0%;
   background-color: #50A960;
+}
+.headerWrap_top {
+  position: relative;
+  top: 60px;
 }
 .headerWrap_top .header_logo {
   width: 260px;
