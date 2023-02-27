@@ -19,7 +19,7 @@ function App(){
             {/* 上面不會動 */}
            <Routes>
             <Route path="finalCup/" element={<Home/>} />
-            <Route path="finalCup/fordummies" element={<Fordummies/>} />
+            <Route path="finalCup/fordummies" element={<Fordummies/>} /> {/* 懶人包 */}
 
            </Routes>
             {/* 下面不會動 */}

@@ -82,6 +82,7 @@
   background-color: #fff;
   box-shadow: 3px 13px 45px rgba(216, 235, 220, 0.57);
   border-radius: 46px;
+
 }
 .headerWrap_top .navBar {
   display: flex;
@@ -90,10 +91,13 @@
   align-items: center;
   padding: 25px 54px;
   list-style: none;
+
+  
 }
 .headerWrap_top .navBar_item {
   padding: 0 5px;
   position: relative;
+
 }
 .headerWrap_top .navBar_item a {
   text-decoration: none;
@@ -102,6 +106,7 @@
   color: #2D5363;
   font-weight: 700;
   transition: 0.3s;
+
 }
 .headerWrap_top .navBar_item a:hover {
   color: #64C676;
@@ -118,6 +123,7 @@
   left: -17px;
   top: 43px;
   display: none;
+  z-index: 9;
 }
 .headerWrap_top .navBar .drop-menu_item a {
   font-weight: 500;
@@ -126,6 +132,7 @@
   border-radius: 4px;
   padding: 0px 10px;
   transition: background-color 0.3s;
+  z-index: 9;
 }
 .headerWrap_top .navBar .drop-menu_item a:hover {
   background-color: rgba(230, 246, 228, 0.9);
