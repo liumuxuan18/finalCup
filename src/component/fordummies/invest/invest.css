@@ -10,6 +10,7 @@
 .fordummies-container{
   background-color: var(--mainColor-white);
   margin: 20rem auto;
+  padding: 1rem;
 }
 
 /*End Opportunities*/
