@@ -6,8 +6,6 @@ import "aos/dist/aos.css"
 // import "../style/layout.css";
 import ToTop from "../component/ToTop";
 import Scroll from "../component/Scroll";
-import NavBar from "../component/NavBar";
-import Footer from "../component/Footer";
 import decDot1 from "../img/index/decSpan/decDot1.svg"
 import decDot2 from "../img/index/decSpan/decDot2.svg"
 import decDot3 from "../img/index/decSpan/decDot3.svg"
@@ -43,8 +41,7 @@ function Home(){
                 {/* <!-- scroll --> */}
                 <Scroll />
                 <div className="container">
-                        {/* <!-- 導覽列菜單 --> */}         
-                            <NavBar />                   
+                        {/* <!-- 導覽列菜單 --> */}                          
                     <div className="headerWrap_banner">
                     <span className="decDot decDot1 animate__animated animate__zoomIn"><img src={decDot1}/></span>
                         <div className="visualBox" data-aos="fade-up" data-aos-duration="1000">
@@ -490,7 +487,7 @@ function Home(){
             </div>
             </div>
         </div>
-            <Footer />
+       
        </div>
     );
 
