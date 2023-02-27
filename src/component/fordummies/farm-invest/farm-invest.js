@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './farm.css'
 
 const Farm = () => {
@@ -7,7 +8,7 @@ const Farm = () => {
     <h2 class="farm-invest__title">
       哪裡使用 <span>循環杯</span>？
     </h2>
-    <a href="#" class="btn btn__farm--invest">Learn More</a>
+    <Link to="/map" class="btn btn__farm--invest">Learn More</Link>
   </section>
 
   )
